@@ -6,3 +6,19 @@ let order = [
   { itemName: "Hot Coffee", quantity: 2, unitPrice: 1.0 },
   { itemName: "Hash Brown", quantity: 4, unitPrice: 0.4 },
 ];
+
+
+function printReceipt (objectArr){
+  let total = [];
+  console.log("QTY ITEM            TOTAL");
+  for (let item of objectArr){
+    let {itemName, quantity, unitPrice} = item;
+    console.log(`${quantity}   ${itemName}     ${unitPrice.toFixed(2)}`);
+    total.push(unitPrice);
+  }
+  console.log("Total:" + total.reduce( (acc, curr, currInd) =>{ 
+    return acc + curr;
+  }));
+}
+
+printReceipt(order);
