@@ -98,4 +98,5 @@ function displayTeachersWithPets(objArr){
 
 
 displayCharacterName(hogwarts); //Done
+console.log(); //Just some space
 displayTeachersWithPets(hogwarts);
