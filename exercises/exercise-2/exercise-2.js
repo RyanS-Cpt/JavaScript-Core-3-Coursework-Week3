@@ -85,4 +85,17 @@ function displayCharacterName (ObjArr){
   }
 }
 
+
+// FUnction to display teacher's who have pets
+function displayTeachersWithPets(objArr){
+  for (let character of objArr){
+    if(character.occupation === "Teacher" && character.pet){
+      let {firstName, lastName} = character;
+      console.log(firstName, lastName);
+    }
+  }
+}
+
+
 displayCharacterName(hogwarts); //Done
+displayTeachersWithPets(hogwarts);
