@@ -3,7 +3,7 @@ let hogwarts = [
     firstName: "Harry",
     lastName: "Potter",
     house: "Gryffindor",
-    pet: "Owl",
+    pet: "Hedwig",
     occupation: "Student",
   },
   {
@@ -17,7 +17,7 @@ let hogwarts = [
     firstName: "Hermione",
     lastName: "Granger",
     house: "Gryffindor",
-    pet: "Cat",
+    pet: "Crookshanks",
     occupation: "Student",
   },
   {
@@ -66,7 +66,23 @@ let hogwarts = [
     firstName: "Albus",
     lastName: "Dumbledore",
     house: "Gryffindor",
-    pet: "Phoenix",
+    pet: "Fawkes",
     occupation: "Teacher",
   },
 ];
+
+//Display Name and Surname function
+function displayCharacterName (ObjArr){
+  for (let character of ObjArr){
+
+    if(character.house === "Gryffindor"){
+
+    let {firstName, lastName} = character;
+    console.log(firstName, lastName);
+
+    }
+
+  }
+}
+
+displayCharacterName(hogwarts); //Done
