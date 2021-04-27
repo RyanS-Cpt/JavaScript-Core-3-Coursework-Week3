@@ -14,9 +14,9 @@ function printReceipt (objectArr){
   for (let item of objectArr){
     let {itemName, quantity, unitPrice} = item;
     console.log(`${quantity}   ${itemName}     ${unitPrice.toFixed(2)}`);
-    total.push(unitPrice);
+    total.push(unitPrice * quantity);
   }
-  console.log("Total:" + total.reduce( (acc, curr, currInd) =>{ 
+  console.log("Total:" + " "+ total.reduce( (acc, curr, currInd) =>{ 
     return acc + curr;
   }));
 }

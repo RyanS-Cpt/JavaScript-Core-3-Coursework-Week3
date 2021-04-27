@@ -84,7 +84,10 @@ function displayCharacterName (ObjArr){
 
   }
 }
-
+/* Study session solution
+hogwarts.filter(({house}) => house === "Gryffindor")
+.forEach(({firstName, lastName}) => console.log(firstNAme, lastName));
+*/
 
 // FUnction to display teacher's who have pets
 function displayTeachersWithPets(objArr){
@@ -95,7 +98,11 @@ function displayTeachersWithPets(objArr){
     }
   }
 }
-
+/*
+Study session solution
+hogwarts.filter(({occupation, pet})=> occupation === "Teacher" && pet)
+.forEach(({firstName, lastName}) => console.log(firstName, lastName));
+ */
 
 displayCharacterName(hogwarts); //Done
 console.log(); //Just some space
