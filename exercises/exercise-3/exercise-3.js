@@ -27,3 +27,21 @@ function printReceipt(objectArr) {
 }
 
 printReceipt(order);
+
+//CYF Solution using .padEnd function to create more consistent spacing
+// function pad(value, width) {
+// 	return value.toString().padEnd(width, " ");
+// }
+
+// function printRow(quantity, itemName, totalPrice) {
+// 	console.log(`${pad(quantity, 1)} ${pad(itemName, 19)} ${totalPrice}`);
+// }
+
+// let total = 0;
+// printRow("QTY", "ITEM", "TOTAL");
+// for (const { quantity, itemName, unitPrice } of order) {
+// 	printRow(quantity, itemName, (unitPrice * quantity).toFixed(2));
+// 	total += unitPrice * quantity;
+// }
+// console.log();
+// console.log(`Total: ${total}`);
